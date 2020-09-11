@@ -174,10 +174,14 @@ def menu():
         command=input(prompt)
         if(command =='c'): # 聊天
             ask()
-        if(command=='e'): # 退出
-            break 
-        if(command == 'cm'): ## 打开网易云音乐
+        if(command=='e'or command=='b'): # 退出
+            print('主人我会想你的o(TヘTo),下次再见吧')
+            input()
+            sys.exit(0) 
+        if(command == 'cm'): # 打开网易云音乐
             music()
+        if(command == 'r'): # 刷新
+            break
 			
 prompt = ">>"          
     
@@ -188,4 +192,3 @@ while 1:
     lovely_maid()
     menu()
     input()
-
